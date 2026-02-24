@@ -45,3 +45,47 @@ El proyecto integra al menos **tres APIs**, cumpliendo con el objetivo de la pr�
    - Selección aleatoria de canciones relajantes o bonitas
 
 
+## ▶️ Cómo ejecutar el proyecto
+
+1. Clona el repositorio o descarga el proyecto
+2. Crea y activa el entorno virtual:
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+
+Instala las dependencias:
+
+pip install -r requirements.txt
+
+Ejecuta la aplicación:
+
+python app.py
+
+Abre en el navegador:
+
+http://127.0.0.1:5000
+🎨 Diseño
+
+Estilo minimalista
+
+Tarjetas con sombras suaves
+
+Colores relajantes
+
+Emojis para reforzar emociones
+
+Diseño responsive
+
+🎯 Objetivo académico
+
+Este proyecto fue desarrollado como parte de una práctica escolar para:
+
+Integrar múltiples APIs
+
+Aplicar conocimientos de Flask y Jinja2
+
+Diseñar una aplicación funcional y útil
+
+Manejar errores con valores de respaldo (fallback)
+
