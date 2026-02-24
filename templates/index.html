@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+
+    <header class="header">
+        <h1>🌸 MoodMap</h1>
+        <p>Tu espacio emocional del día</p>
+    </header>
+
+    <section class="cards">
+
+        <div class="card weather">
+            <h3>🌤 Clima</h3>
+            <p class="city">{{ weather.name }}</p>
+            <p class="temp">{{ weather.main.temp }} °C</p>
+            <p class="desc">{{ weather.weather[0].description }}</p>
+        </div>
+
+        <div class="card quote">
+            <h3>💬 Frase del día</h3>
+            <p class="quote-text">"{{ quote.text }}"</p>
+            <small>- {{ quote.author }}</small>
+        </div>
+
+    </section>
+
+    <section class="music">
+        <h3>🎵 Música para acompañarte</h3>
+        <iframe
+            src="https://www.youtube.com/embed/{{ video_id }}"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="feed">
+        <div class="mood-card">
+            <h4>Me siento tranquila 🌿</h4>
+            <p>Hoy decidí ir con calma.</p>
+            <span>❤️ 120</span>
+        </div>
+
+        <div class="mood-card">
+            <h4>Día pesado 😵‍💫</h4>
+            <p>No fue fácil, pero aquí sigo.</p>
+            <span>❤️ 89</span>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
